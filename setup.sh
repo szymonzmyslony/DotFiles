@@ -43,8 +43,12 @@ cmd_install_common() {
     curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim \
         --create-dirs \
         https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-    pip3 install neovim
+    sudo pacman -S neovim python-pynvim
     nvim +PlugInstall +qall
+
+    echo '[ -f /usr/share/fzf/key-bindings.zsh ] && source /usr/share/fzf/key-bindings.zsh' >> "${XDG_CONFIG_HOME:-$HOME/.config}/zsh/.zshrc"
+    echo '[ -f /usr/share/fzf/completion.zsh ] && source /usr/share/fzf/completion.zsh' >> "${XDG_CONFIG_HOME:-$HOME/.config}/zsh/.zshrc"
+    echo "source ~/.local/share/zsh/plugins/zsh-fzf-history-search/zsh-fzf-history-search.plugin.zsh" >> "${XDG_CONFIG_HOME:-$HOME/.config}/zsh/.zshrc"
 
     git clone https://github.com/alexanderjeurissen/ranger_devicons \
         "${XDG_CONFIG_HOME:-$HOME/.config}"/ranger/plugins/ranger_devicons
