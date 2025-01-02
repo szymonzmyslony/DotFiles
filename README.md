@@ -7,7 +7,7 @@ These are config files and scripts which power my arch linux system.
 1. Execute setup script:
    ```bash
    sudo pacman -S git
-   git clone https://github.com/SmirnovAlexander/DotFiles.git && cd DotFiles
+   git clone https://github.com/szymonzmyslony/DotFiles.git && cd DotFiles
    ./setup.sh
    ```
 2. Reboot in case of desktop and relogin in case of server
