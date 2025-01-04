@@ -1,8 +1,8 @@
 [core]
     hooksPath = .githooks
 [user]
-    name = Alexander Smirnov
-    email = alex@asmirnov.xyz
+    name = szymon Zmyslony
+    email = szymonzmyslony@gmail.com
 [push]
     autoSetupRemote = true
 [alias]

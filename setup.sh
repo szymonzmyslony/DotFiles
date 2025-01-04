@@ -52,8 +52,7 @@ cmd_install_common() {
 
     git clone https://github.com/alexanderjeurissen/ranger_devicons \
         "${XDG_CONFIG_HOME:-$HOME/.config}"/ranger/plugins/ranger_devicons
-    # echo "default_linemode devicons" >> \
-    #     "${XDG_CONFIG_HOME:-$HOME/.config}"/ranger/rc.conf
+
 
     # tmux plugin manager
     git clone https://github.com/tmux-plugins/tpm \
